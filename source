@@ -1,0 +1,49 @@
+print('''
+
+         __________
+        /\____;;___\
+       | /         /
+       `. ())oo() .
+        |\(%()*^^()^\
+       %| |-%-------|
+      % \ | %  ))   |
+      %  \|%________|
+ejm97  %%%%
+
+       {}           {}
+         \  _---_  /
+          \/     \/
+           |() ()|
+            \ + /
+ejm 96     / HHH  \
+          /  \_/   \
+        {}          {}''')
+
+print('''Welcome to Treasure Island.
+Your mission is to find the treasure.''')
+n=input('You are on a crossroad. Where do you want to go? Type "left" or "right"')
+if n=='right':
+    print('You fall into a hole')
+    print('Game over')
+elif n=='left':
+    n1=input('You came to a lake. There is a island in the middle of the lake.Do you wanna wait for a boat or swim across.')
+    if n1=='swim':
+        print('You are attacked by trout.')
+        print('Game over')
+    elif n1=='wait':
+        n2=input('We arrived at the island unharmed. Now there are 3 doors infront of you. Red, Blue, Yellow. Choose a door.')
+        if n2=='red':
+            print('You are burned by fire')
+            print('Game over')
+        elif n2=='blue':
+            print('You are eaten by beasts')
+            print('Game over')
+        elif n2=='yellow':
+            print('Congratulations!!! You won the game')
+        else:
+            print('Game over')
+    else:
+        print('Game over')
+else:
+    print('Game over')
+
